@@ -1,6 +1,6 @@
 FROM nginx:mainline-alpine
 
-MAINTAINER ngineered <support@ngineered.co.uk>
+MAINTAINER fluentsoftware <support@fluentsoftware.co.uk>
 
 ENV php_conf /etc/php5/php.ini
 ENV fpm_conf /etc/php5/php-fpm.conf
@@ -49,6 +49,7 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
     dialog \
     gcc \
     musl-dev \
+    mysql-client \
     linux-headers \
     libffi-dev &&\
     mkdir -p /etc/nginx && \
