@@ -1,6 +1,6 @@
 FROM php:7.1.6-fpm-alpine
 
-MAINTAINER ngineered <support@ngineered.co.uk>
+MAINTAINER fluentsoftware <support@fluentsoftware.co.uk>
 
 ENV php_conf /usr/local/etc/php-fpm.conf
 ENV fpm_conf /usr/local/etc/php-fpm.d/www.conf
@@ -151,6 +151,7 @@ RUN echo @testing http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repo
     dialog \
     gcc \
     musl-dev \
+    mysql-client \
     linux-headers \
     libmcrypt-dev \
     libpng-dev \
